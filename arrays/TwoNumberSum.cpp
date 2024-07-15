@@ -1,5 +1,6 @@
 // O(n^2) time / O(1) space
-std::vector<int> twoNumberSum(std::vector<int> array, int target_num) {
+std::vector<int> twoNumberSum(std::vector<int> array, int target_num)
+{
   for (int i = 0; i < array.size(); ++i) {
     const int first_number = array[i];
     for (int j = i + 1; j < array.size(); ++j) {
@@ -29,7 +30,8 @@ std::vector<int> twoNumberSum(std::vector<int> array, int target)
 }
 
 // O(n*log(n)) time / O(1) space
-std::vector<int> twoNumberSum(std::vector<int> array, int target_num) {
+std::vector<int> twoNumberSum(std::vector<int> array, int target_num)
+{
   std::sort(begin(array), end(array));
 
   int left = 0;
